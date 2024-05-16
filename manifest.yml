@@ -1,4 +1,4 @@
-name: netlify-plugin-minify-html
+name: netlify-plugin-minify-js
 inputs:
   - name: contexts
     default:
