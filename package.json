@@ -16,6 +16,6 @@
     "url": "https://github.com/ryangittings/netlify-plugin-minify-js"
   },
   "dependencies": {
-    "@node-minify/core": "^8.0.6"
+    "node-minify": "^3.6.0"
   }
 }
