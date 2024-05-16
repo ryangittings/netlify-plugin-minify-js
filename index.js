@@ -1,4 +1,5 @@
-const compressor = require('node-minify');
+const compressor = require('@node-minify/core');
+const uglifyJS = require('@node-minify/uglify-js');
 
 module.exports = {
   onPostBuild: async ({ inputs, constants, utils }) => {
@@ -15,7 +16,7 @@ module.exports = {
 
     try {
       await compressor({
-        compressor: 'uglifyjs',
+        compressor: uglifyJS,
         input: constants.PUBLISH_DIR + '/**/*.js',
         output: '$1.js',
         replaceInPlace: true

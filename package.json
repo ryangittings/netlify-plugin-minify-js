@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-minify-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A plugin to add JS minification as a post-processing optimisation in Netlify",
   "main": "index.js",
   "keywords": [
@@ -16,6 +16,7 @@
     "url": "https://github.com/ryangittings/netlify-plugin-minify-js"
   },
   "dependencies": {
-    "node-minify": "^3.6.0"
+    "@node-minify/core": "^8.0.6",
+    "@node-minify/uglify-js": "^8.0.6"
   }
 }
